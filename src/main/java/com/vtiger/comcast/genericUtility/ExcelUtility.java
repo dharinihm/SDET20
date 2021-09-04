@@ -9,7 +9,11 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 import com.google.common.collect.Table.Cell;
-
+/**
+ * its developed using Apache POi libraries , which used to handle Microsoft Excel sheet
+ * @author dharini
+ *
+ */
 public class ExcelUtility {
 		/**
 		 *  its used read the data from excel base don below arguments 

@@ -1,5 +1,7 @@
 package com.vtiger.comcast.organisationtest;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
@@ -31,7 +33,7 @@ public class SelectOrgFromOrgListTest extends BaseClass {
 		String smalldivHead = orginfo.getSmallHeaderText().getText();
 		String actualTxt = divDivHead + " " + smalldivHead;
 		boolean res = actualTxt.contains(expTxt);
-		Assert.assertTrue(res);
+		AssertJUnit.assertTrue(res);
 		}
 
 }

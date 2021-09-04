@@ -17,7 +17,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
-
+/**
+ * This class contains webdriver specific generic methods
+ * @author dharini
+ *
+ */
 public class WebDriverUtility {
 
 	/**

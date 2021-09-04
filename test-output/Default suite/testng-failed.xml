@@ -3,17 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vtiger.comcast.organisationtest.SelectOrgFromOrgListTestNG">
+      <class name="com.vtiger.comcast.organisationtest.SearchOrgTest">
         <methods>
           <include name="configBS"/>
           <include name="configBC"/>
-          <include name="selectOrgFromOrgListTest"/>
+          <include name="SearchOrgByRatingTest"/>
           <include name="configBM"/>
           <include name="configAM"/>
           <include name="configAS"/>
           <include name="configAC"/>
+          <include name="SearchOrgByAssignToTest"/>
         </methods>
-      </class> <!-- com.vtiger.comcast.organisationtest.SelectOrgFromOrgListTestNG -->
+      </class> <!-- com.vtiger.comcast.organisationtest.SearchOrgTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
