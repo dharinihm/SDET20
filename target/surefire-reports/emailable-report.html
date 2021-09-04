@@ -8,39 +8,64 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">FullRegressionTest</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">281,770</td><td></td><td></td></tr>
+<tr><th colspan="8">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,812</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">FullRegressionTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.vtiger.comcast.organisationtest.SearchOrgTest</td><td><a href="#m0">configBM</a></td><td rowspan="1">1630066277333</td><td rowspan="1">1731</td></tr><tr><th colspan="4">FullRegressionTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.vtiger.comcast.organisationtest.SelectOrgFromOrgListTest</td><td><a href="#m1">selectOrgFromOrgListTest</a></td><td rowspan="1">1630066330958</td><td rowspan="1">65660</td></tr><tr><th colspan="4">FullRegressionTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.vtiger.comcast.organisationtest.SearchOrgTest</td><td><a href="#m2">configAC</a></td><td rowspan="1">1630066279345</td><td rowspan="1">-1630066279345</td></tr><tr class="skippedeven"><td><a href="#m3">configAM</a></td><td rowspan="1">1630066279341</td><td rowspan="1">-1630066279341</td></tr><tr><th colspan="4">FullRegressionTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.vtiger.comcast.organisationtest.SearchOrgTest</td><td><a href="#m4">SearchOrgByRatingTest</a></td><td rowspan="1">1630066279339</td><td rowspan="1">0</td></tr><tr><th colspan="4">FullRegressionTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.vtiger.comcast.organisationtest.SearchOrgTest</td><td><a href="#m5">SearchOrgByAssignToTest</a></td><td rowspan="1">1630066196666</td><td rowspan="1">54624</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.practice.SearchOrgByRatingTest</td><td><a href="#m0">test</a></td><td rowspan="1">1630745972379</td><td rowspan="1">20356</td></tr></tbody>
 </table>
-<h2>FullRegressionTest</h2><h3 id="m0">com.vtiger.comcast.organisationtest.SearchOrgTest#configBM</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+<h2>Command line test</h2><h3 id="m0">com.practice.SearchOrgByRatingTest#test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 93.0.4577.63 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DHARINI-HP&apos;, ip: &apos;192.168.64.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00C83733+2504499]
+	Ordinal0 [0x00C1C401+2081793]
+	Ordinal0 [0x00B22628+1058344]
+	Ordinal0 [0x00B4071A+1181466]
+	Ordinal0 [0x00B3C58C+1164684]
+	Ordinal0 [0x00B39DC3+1154499]
+	Ordinal0 [0x00B69B82+1350530]
+	Ordinal0 [0x00B697DA+1349594]
+	Ordinal0 [0x00B65D4B+1334603]
+	Ordinal0 [0x00B422B4+1188532]
+	Ordinal0 [0x00B43149+1192265]
+	GetHandleVerifier [0x00DFFB8C+1512252]
+	GetHandleVerifier [0x00EAB0DF+2214031]
+	GetHandleVerifier [0x00D04BC3+484211]
+	GetHandleVerifier [0x00D03E69+480793]
+	Ordinal0 [0x00C2218D+2105741]
+	Ordinal0 [0x00C266E8+2123496]
+	Ordinal0 [0x00C26827+2123815]
+	Ordinal0 [0x00C2FB73+2161523]
+	BaseThreadInitThunk [0x77A5FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77CE7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77CE7A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.vtiger.comcast.genericUtility.BaseClass.configBM(BaseClass.java:55)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.practice.SearchOrgByRatingTest.test(SearchOrgByRatingTest.java:20)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.vtiger.comcast.organisationtest.SelectOrgFromOrgListTest#selectOrgFromOrgListTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at com.vtiger.comcast.organisationtest.SelectOrgFromOrgListTest.selectOrgFromOrgListTest(SelectOrgFromOrgListTest.java:34)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.vtiger.comcast.organisationtest.SearchOrgTest#configAC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.vtiger.comcast.organisationtest.SearchOrgTest#configAM</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.vtiger.comcast.organisationtest.SearchOrgTest#SearchOrgByRatingTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DHARINI-HP&apos;, ip: &apos;192.168.64.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.vtiger.comcast.genericUtility.BaseClass.configBM(BaseClass.java:55)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.vtiger.comcast.organisationtest.SearchOrgTest#SearchOrgByAssignToTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

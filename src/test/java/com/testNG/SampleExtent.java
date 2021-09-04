@@ -1,5 +1,7 @@
 package com.testNG;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -21,6 +23,6 @@ public class SampleExtent extends Extent20 {
 		String expTitle = "Administrator - Home - vtiger CRM 5 - Commercial Open Source CRM";
 
 		String actualTitle = driver.getTitle();
-		Assert.assertEquals(expTitle, actualTitle);
+		AssertJUnit.assertEquals(expTitle, actualTitle);
 	}
 }

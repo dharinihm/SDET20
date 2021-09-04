@@ -1,5 +1,8 @@
 package com.testNG;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -26,6 +29,7 @@ public class Extent20 {
 	ExtentReports reports;
 	ExtentTest test;
 
+	@BeforeMethod
 	@BeforeSuite
 	public void setUp() {
 		reporter = new ExtentHtmlReporter("./ExtentReports20/vtiger.html");

@@ -9,7 +9,7 @@ public class JavaUtility {
 	/**
 	 * this class contains java specific generic libraries
 	 * 
-	 * @author Deepak
+	 * @author dharini
 	 *
 	 */
 

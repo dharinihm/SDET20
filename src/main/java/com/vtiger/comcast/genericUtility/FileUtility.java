@@ -2,7 +2,11 @@ package com.vtiger.comcast.genericUtility;
 
 import java.io.FileInputStream;
 import java.util.Properties;
-
+/**
+ * 
+ * @author dharini
+ *
+ */
 public class FileUtility {
 	/**
 	 * its used to read the data from commonData.properties File based on Key which

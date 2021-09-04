@@ -1,5 +1,7 @@
 package com.vtiger.comcast.organisationtest;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -13,10 +15,8 @@ import com.vtiger.comcast.genericUtility.WebDriverUtility;
 import com.vtiger.comcast.pomrepolib.HomePage;
 import com.vtiger.comcast.pomrepolib.OrganizationsPage;
 
-
 @Listeners(com.vtiger.comcast.genericUtility.ListenerImpCls.class)
 public class SearchOrgTest extends BaseClass {
-	WebDriverUtility wdUtil = new WebDriverUtility();
 
 	@Test(groups = { "smokeTest" })
 	public void SearchOrgByAssignToTest() {
@@ -31,7 +31,7 @@ public class SearchOrgTest extends BaseClass {
 		org.getBasicsearchForTxtFld().sendKeys(searchText);
 
 		/* Step-3: Select "AssignTo" from IN dropdown list */
-		wdUtil.select(org.getBasicsearchInDropDown(), "Assigned To");
+		wdutil.select(org.getBasicsearchInDropDown(), "Assigned To");
 
 		/* Step-4: Click on basic search button */
 		org.getBasicSearchBtn().click();
@@ -41,7 +41,7 @@ public class SearchOrgTest extends BaseClass {
 
 		for (WebElement ele : assignToText) {
 			boolean assertRes = ele.getText().contains(searchText);
-			Assert.assertTrue(assertRes);
+			AssertJUnit.assertTrue(assertRes);
 
 		}
 
@@ -59,17 +59,17 @@ public class SearchOrgTest extends BaseClass {
 		org.getGotoAdvancedSearchLink().click();
 
 		/* Step-3: Select Rating from dropdown1 */
-		wdUtil.select(org.getAdvSearchDropDown1(), "Rating");
+		wdutil.select(org.getAdvSearchDropDown1(), "Rating");
 
 		/* Step-4: Select function from dropdown2 */
-		wdUtil.select(org.getAdvSearchDropDown2(), "equals");
+		wdutil.select(org.getAdvSearchDropDown2(), "equals");
 
 		/* Step-5: Type Active for Search keyword textField */
 		org.getAdvSearchtxtFld().sendKeys("active");
 
 		/* Step-6: Click on advance search button */
 		org.getBasicSearchBtn().click();
-		
+
 	}
 
 }
